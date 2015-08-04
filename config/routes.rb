@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
+  get 'opinions/index'
+
+  get 'gallaries/index'
+
+  get 'menus/index'
+
   get 'home/index'
+  get 'home/contact'
+  resources :home
+  resources :menus
+  resources :gallaries
+  resources :opinions
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails KampusKorner: development" uuid="6b3f560c-63a4-4729-9585-065247398556">
+      <user-name>postgres</user-name>
+      <user-password>df9bdf98df99df9edf9fdf9c</user-password>
+      <schema-pattern>KampusKorner.pg_catalog KampusKorner.public</schema-pattern>
+      <default-schemas>KampusKorner.pg_catalog KampusKorner.public</default-schemas>
+    </data-source>
+    <data-source name="Rails KampusKorner: test" uuid="59c45b64-8cff-4edb-aec2-53b6ba0619cf">
+      <user-name>postgres</user-name>
+      <user-password>df9bdf98df99df9edf9fdf9c</user-password>
+      <schema-pattern>KampusKorner.pg_catalog KampusKorner.public</schema-pattern>
+      <default-schemas>KampusKorner.pg_catalog KampusKorner.public</default-schemas>
+    </data-source>
+    <data-source name="Rails KampusKorner: production" uuid="5a5ef1a6-8e92-4b7b-9bc9-d0014dfe96f8">
+      <first-sync>true</first-sync>
+      <user-name>KampusKorner</user-name>
+      <user-password>df9bdf98df99df9edf9fdf9c</user-password>
+    </data-source>
+  </component>
+</project>
