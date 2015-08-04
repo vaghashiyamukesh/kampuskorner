@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   get 'menus/index'
 
   get 'home/index'
-  get 'home/contact'
   resources :home
   resources :menus
   resources :gallaries

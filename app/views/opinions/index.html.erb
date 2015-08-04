@@ -1,2 +1,82 @@
-<h1>Opinions#index</h1>
-<p>Find me in app/views/opinions/index.html.erb</p>
+<div class="main-body">
+  <div id="slider">
+    <a href="#" target="_blank">
+      <%= image_tag "slider-1.jpg"%>
+
+    </a>
+    <a href="#" target="_blank">
+      <%= image_tag "slider-2.jpg"%>
+
+    </a>
+    <a href="#" target="_blank">
+      <%= image_tag "slider-3.jpg"%>
+
+    </a>
+  </div>
+  <%= render 'home/sidebar'%>
+
+  <div style="max-width: 75%">
+    <%= image_tag "locatin.png"%>
+    </div>
+  <br />
+  <% flash.each do |key, value|  %>
+      <%= value %>
+  <% end%>
+  <h1><b>Please give your valuable feedback</b></h1></br>
+
+  <%= form_for Opinion.new do |opinion| %>
+      <%= opinion.label :name %>
+      <%= opinion.text_field :name, autofocus: true %><br /><br />
+
+      <%= opinion.label :email %>
+      <%= opinion.email_field :email, autofocus: true %><br /><br />
+
+      <%= opinion.label "Did you recieve your meal in a timely fashion?" %>
+      <br />
+      <%= opinion.radio_button :q1,"1"  %>
+      <%= label_tag(:opinion_q1_1, "Unsatisfied") %>
+      <%= opinion.radio_button(:q1,"2")  %>
+      <%= label_tag(:opinion_q1_2, "satisfied") %>
+      <%= opinion.radio_button(:q1,"3")  %>
+      <%= label_tag(:opinion_q1_3, "very satisfied") %>
+      <br /><br />
+
+      <%= opinion.label "How would you rate your meal?" %>
+      <br />
+      <%= opinion.radio_button :q2,"1"  %>
+      <%= label_tag(:opinion_q2_1, "Unsatisfied") %>
+      <%= opinion.radio_button(:q2,"2")  %>
+      <%= label_tag(:opinion_q2_2, "satisfied") %>
+      <%= opinion.radio_button(:q2,"3")  %>
+      <%= label_tag(:opinion_q2_3, "very satisfied") %>
+      <br /><br />
+
+      <%= opinion.label "How would you rate your overall experience?" %>
+      <br />
+      <%= opinion.radio_button :q3,"1"  %>
+      <%= label_tag(:opinion_q3_1, "Unsatisfied") %>
+      <%= opinion.radio_button(:q3,"2")  %>
+      <%= label_tag(:opinion_q3_2, "satisfied") %>
+      <%= opinion.radio_button(:q3,"3")  %>
+      <%= label_tag(:opinion_q3_3, "very satisfied") %>
+      <br /><br />
+
+      <%= opinion.label "Would you recommend Kampus Korner to your friends?" %>
+      <br />
+      <%= opinion.radio_button :q4,"1"  %>
+      <%= label_tag(:opinion_q4_1, "Yes") %>
+      <%= opinion.radio_button(:q4,"2")  %>
+      <%= label_tag(:opinion_q4_2, "No") %>
+      <br /><br/>
+      <%= opinion.label :improvement %><br/>
+      <%= opinion.text_area :improvement, autofocus: true %><br /><br />
+
+
+      <%= opinion.submit  "submit" %>
+
+
+      <% end%>
+
+
+  <div class="clear"> </div>
+</div>

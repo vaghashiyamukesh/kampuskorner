@@ -6,6 +6,8 @@ class CreateOpinions < ActiveRecord::Migration
       t.integer :q3
       t.integer :q4
       t.text :improvement
+      t.text :name
+      t.text :email
 
       t.timestamps
     end
