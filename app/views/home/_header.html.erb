@@ -1,0 +1,21 @@
+<div class="header">
+  <div class="logo"><a href="index.html"><%= image_tag "logo.png"%></a></div>
+  <div class="search">
+    <form>
+      <input type="text" value="" />
+      <input type="submit" value="" />
+    </form>
+  </div>
+  <div class="clear"> </div>
+</div>
+<div class="nav">
+  <ul>
+    <li class="active"><a href="index.html">Home</a></li>
+    <li><%=link_to "About" , home_index_path %></li>
+    <li><%=link_to "Gallery" , gallaries_path %></li>
+    <li><%=link_to "Menu" , menus_index_path %></li>
+    <li><%=link_to "Opinion" , opinions_index_path %></li>
+    <li><%=link_to "Contact" , home_contact_path %></li>
+    <div class="clear"> </div>
+  </ul>
+</div>

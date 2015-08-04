@@ -1,2 +1,71 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="main-body">
+  <div id="slider">
+    <a href="#" target="_blank">
+      <%= image_tag "slider-1.jpg"%>
+
+    </a>
+    <a href="#" target="_blank">
+      <%= image_tag "slider-2.jpg"%>
+
+    </a>
+    <a href="#" target="_blank">
+      <%= image_tag "slider-3.jpg"%>
+
+    </a>
+  </div>
+  <div class="grids">
+    <ul>
+      <h4>To day-Items</h4>
+      <li>
+        <h3>Ipsum simply</h3>
+        <%= image_tag "thumb-1.jpg"%>
+
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit ame</p>
+        <button>$12.58</button>
+      </li>
+      <li>
+        <h3>Lorem Ipsum</h3>
+        <%= image_tag "thumb-2.jpg"%>
+
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit ame</p>
+        <button>$12.58</button>
+      </li>
+      <li>
+        <h3>Ipsum simply</h3>
+        <%= image_tag "thumb-3.jpg"%>
+
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit ame</p>
+        <button>$12.58</button>
+      </li>
+      <a>view</a>
+      <div class="clear"> </div>
+
+      <h4>Latest-Items</h4>
+      <li>
+        <h3>Ipsum simply</h3>
+        <%= image_tag "thumb-5.jpg"%>
+
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit ame</p>
+        <button>$12.58</button>
+      </li>
+      <li>
+        <h3> Lorem Ipsum</h3>
+        <%= image_tag "thumb-6.jpg"%>
+
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit ame</p>
+        <button>$12.58</button>
+      </li>
+      <li class="last">
+        <h3>Lorem simply</h3>
+        <%= image_tag "thumb-4.jpg"%>
+
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit ame</p>
+        <button>$12.58</button>
+      </li>
+      <a>View all</a>
+    </ul>
+    <div class="clear"> </div>
+  </div>
+  <%= render 'home/sidebar'%>
+  <div class="clear"> </div>
+</div>
