@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 /* latin-ext */
 @font-face {
     font-family: 'Libre Baskerville';
-    font-style: normal;
+    /*font-style: normal;*/
     font-weight: 400;
     src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(http://fonts.gstatic.com/s/librebaskerville/v4/pR0sBQVcY0JZc_ciXjFsKwHlCYWexZJCPRz1QQ0uKVU.woff2) format('woff2');
     unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
@@ -21,8 +21,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(http://fonts.gstatic.com/s/librebaskerville/v4/pR0sBQVcY0JZc_ciXjFsK6Ucnt8gjcHpqyffjHeZWDA.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
-article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header,  menu, nav, section {display: block;}
 ol,ul{list-style:none;margin:0;padding:0;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
@@ -233,7 +233,7 @@ body{
 	font-size: 12px;
 	margin:0px 8px 10px 0px;
 	font-family: 'Libre Baskerville', serif;
-	text-transform: 'normal;
+	/*text-transform: 'normal;*/
 	background-color: #0CA38B;
 	padding:5px 7px;
 	color:#fff;
@@ -342,7 +342,7 @@ body{
 	font-size: 12px;
 	margin: 0px 8px 10px 0px;
 	font-family: 'Libre Baskerville', serif;
-	text-transform: normal;
+	/*text-transform: normal;*/
 	background-color: #0CA38B;
 	padding: 5px 7px;
 	color: white;
@@ -502,7 +502,7 @@ body{
 	color: #fff;
 }
 .map{
-	float: right;
+	float: left;
 	margin-right: 30px;
 	box-shadow: 0 0 8px #666;
 	margin-top:70px;
