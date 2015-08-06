@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: KampusKorner
-  username: KampusKorner
+  username: postgres
   password: 123456

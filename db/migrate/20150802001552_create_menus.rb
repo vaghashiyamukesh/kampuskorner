@@ -4,7 +4,7 @@ class CreateMenus < ActiveRecord::Migration
       t.string :title
       t.integer :category_id
       t.text :body
-      t.string :image_link
+      t.string :rate
 
       t.timestamps
     end
