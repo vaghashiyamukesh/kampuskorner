@@ -6,11 +6,12 @@
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-  <%= stylesheet_link_tag "style"%>
-  <%= stylesheet_link_tag "slider-styles"%>
+  <%= stylesheet_link_tag 'style' %>
+  <%= stylesheet_link_tag 'slider-styles' %>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <%= javascript_include_tag "jquery.min" %>
-  <%= javascript_include_tag "slider" %>
+  <%= javascript_include_tag 'jquery.min' %>
+  <%= javascript_include_tag 'slider' %>
+
 
 </head>
 <body>
@@ -21,7 +22,7 @@
       <ul>
 
         <li class="active"><%=link_to "Home" %></li>
-        <li><%=link_to "Gallery" , gallaries_path %></li>
+        <li ><%=link_to "Gallery" , gallaries_path %></li>
         <li><%=link_to "Contact" , opinions_index_path %></li>
       </ul>
     </div>

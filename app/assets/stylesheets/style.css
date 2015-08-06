@@ -550,3 +550,17 @@ body{
 	background-color:#fff;
 	padding:5px;
 }
+.feedbackFromUser{
+    margin: 9%;
+    background-color: grey;
+    width: 85%;
+    height: 18%;
+    border: 1px solid;
+
+}
+.feedbackFromUser p{
+    background-color: grey !important;
+    color: white;
+
+}
+

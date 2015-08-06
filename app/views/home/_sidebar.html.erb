@@ -13,24 +13,17 @@
     </ul>
   </div>
   <div class="clear"> </div>
-  <ul>
-    <li>
-      <h3>Restaurants Hours</h3>
-      <h4>Breakfast </h4>
-      <p>Monday - Friday &nbsp;&nbsp; 11 am - 03 pm</p>
-      <p>Saturaday - Sunday &nbsp;&nbsp; 11 am - 04 pm</p>
-      <h4>Lunch </h4>
-      <p>Monday - Friday &nbsp;&nbsp; 11 am - 03 pm</p>
-      <p>Saturaday - Sunday &nbsp;&nbsp; 11 am - 04 pm</p>
-    </li>
-    <li>
-      <h3>News And Events</h3>
-      <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit ame</p>
-      <button>Read more</button>
-      <h3>Lorem Ipsum is simply</h3>
-      <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit ame</p>
-      <button>Read more</button>
-    </li>
-    <div class="clear"> </div>
-  </ul>
+<div style=" height: 400px; overflow-x: hidden; border-width: medium; border-style: groove; border-color: aquamarine;">
+  <% all_feedback.each do |option| %>
+      <div class="feedbackFromUser">
+        <p>
+            <span><%= option.name %></span>
+            <span>12/12/2015</span>
+        </p>
+
+        <p><%= option.improvement %></p>
+      </div>
+  <% end %>
+
+</div>
 </div>
