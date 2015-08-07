@@ -1,55 +1,10 @@
-<script type="text/javascript">
-    $(document).ready(function() {
-var count = <%= @category_count%>
-            $("#cat_1").click(function () {
-                $("#menu_1").toggle("normal");
-            });
 
-        $("#cat_2").click(function () {
-            $("#menu_2").toggle("normal");
-        });
-        $("#cat_3").click(function () {
-            $("#menu_3").toggle("normal");
-        });
-        $("#cat_4").click(function () {
-            $("#menu_4").toggle("normal");
-        });
-        $("#cat_5").click(function () {
-            $("#menu_5").toggle("normal");
-        });
-        $("#cat_6").click(function () {
-            $("#menu_6").toggle("normal");
-        });
-        $("#cat_7").click(function () {
-            $("#menu_7").toggle("normal");
-        });
 
-    });
-</script>
+
+
 <div class="main-body">
 
   <div class="clear"> </div>
-  <% @category.each do |x| %>
-          <div id="cat_<%= x.id%>" style="
-    text-align: center;
-    background-color: #0CA38B;
-    height: 35px;
-    font-family: cursive;
-    font-size: x-large;margin-bottom: 7px">
-            <h2><%= x.name%></h2>
-          </div>
-      <div id="menu_<%= x.id%>">
-       <% @menu.where("category_id"=> x.id).each do |y| %>
-
-              <p><span><%=y.title %></span><span>$<%= y.rate%></h2></span>
-
-        <%end%>
-
-      </div>
-
-  <% end%>
-
-
-
-
-      </div>
+  <div class ="main_menu">
+  </div>
+</div>

@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 helper_method :all_feedback
 
   def all_feedback
-    @name = Opinion.select("name,improvement")
+    @name = Opinion.all
   end
 
 end
