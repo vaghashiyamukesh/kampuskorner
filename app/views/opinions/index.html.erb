@@ -1,27 +1,14 @@
 <div class="main-body">
-  <div id="slider">
-    <a href="#" target="_blank">
-      <%= image_tag "slider-1.jpg"%>
 
-    </a>
-    <a href="#" target="_blank">
-      <%= image_tag "slider-2.jpg"%>
 
-    </a>
-    <a href="#" target="_blank">
-      <%= image_tag "slider-3.jpg"%>
-
-    </a>
-  </div>
-  <%= render 'home/sidebar'%>
-
-  <div style="max-width: 75%">
+  <div>
     <%= image_tag "locatin.png"%>
     </div>
   <br />
   <% flash.each do |key, value|  %>
       <%= value %>
   <% end%>
+  <div style="color: floralwhite;float: left;width: 40%;font-family: cursive;">
   <h1><b>Please give your valuable feedback</b></h1></br>
 
   <%= form_for Opinion.new do |opinion| %>
@@ -73,6 +60,15 @@
       <%= opinion.submit  "submit" %>
       <% end%>
 
-
+</div>
+  <div style="width: 40%;float: right;font-family: cursive;font-size: large;color: floralwhite;">
+    <p style="font-size: x-large;">Working hours</p>
+    <p>Monday - Saturday 9:00 AM to 10:00 PM</p>
+    <p>closed on sunday</p>
+    <p style="font-size: x-large; padding-top: 2%">Contaact us</p>
+    <p>4637 Rolfe Christopher Dr</p>
+    <p>Beaumont, TX 77705</p>
+    <p>phone: 409-832-6386</p>
+  </div>
   <div class="clear"> </div>
 </div>

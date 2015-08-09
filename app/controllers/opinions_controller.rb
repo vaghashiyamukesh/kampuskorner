@@ -5,6 +5,7 @@ class OpinionsController < ApplicationController
   def new
 
   end
+
   def create
 
     @opinion = Opinion.new(params[:opinion])

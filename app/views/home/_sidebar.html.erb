@@ -1,27 +1,38 @@
 <script type="text/javascript">
 
-    $('#_sidebar').perfectScrollbar();
+            $(function(){
+                $('#_sidebar').slimScroll({
+                    height: "400px"
+                })
+            });
 
 </script>
 <div class="boxes">
-  <div class="order">
+  <div >
     <ul>
-      <li>
-        <h3>ORDER</h3>
-        <h4>No Products</h4>
-
-      </li>
+      <li><a href="http://order.ehungry.com/kampuskornerrest">
+        <%= image_tag "order_now.png"%>
+     </a> </li>
     </ul>
   </div>
   <div class="clear"> </div>
-<div id= "_sidebar" style=" height: 400px; overflow-x: hidden;">
+  <p style="
+  background: none;
+          font-size: medium;
+          font-family: cursive;
+          font-style: italic;
+          color: floralwhite;
+  ">What people says about us!</p>
+<div id= "_sidebar" style="  overflow-x: hidden;">
   <% all_feedback.each do |option| %>
       <div class="feedbackFromUser">
+        <div id= "_feedback" style="height: 73%;overflow: hidden" >
         <p>
             <span><%= option.name %></span>
             <span style="float: right"><%= option.created_at.strftime("%m/%d/%Y")%></span>
-        </p><hr>
+       </p><hr>
         <p><%= option.improvement %></p>
+        </div>
       </div>
   <% end %>
 </div>

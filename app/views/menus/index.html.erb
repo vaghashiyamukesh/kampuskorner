@@ -1,10 +1,38 @@
+<script type="text/javascript">
+    $(function() {
+        <% @category.each do |cat|%>
+        $("#<%= cat.id %>").on('click', function() {
+            $('#_menuScroll').html("<p class = 'menu_category'><%= cat.name %></p><% @menu.where('category_id'=> cat.id).each do |y| %><div ><p class = 'menu_title'><span><%=y.title %></span></p><span class = 'price'>$<%= y.rate %></span> <% end %>");
+        });
+        <% end%>
+            $('#_menuScroll').slimScroll({
+                height: "450px"
+            });
 
-
+    });
+</script>
 
 
 <div class="main-body">
-
-  <div class="clear"> </div>
   <div class ="main_menu">
+    <div id="menu_right" style="padding-top: 16%">
+      <div id="_menuScroll">
+
+
+      <p class = 'menu_category'>
+        <%= @category_first.name %></p>
+          <% @menu.where('category_id'=> @category_first.id).each do |y| %>
+              <p class = 'menu_title'><span><%=y.title %></span></p>
+              <span class = 'price'>$<%= y.rate %></span>
+          <% end %>
+      </div>
+    </div>
   </div>
-</div>
+  <div class = "category">
+    <% @category.each do |cat|%>
+        <div class="menu_button" id="<%= cat.id%>"><%= cat.name %></div>
+    <%end%>
+  </div>
+  <div class="clear"> </div>
+  </div>
+

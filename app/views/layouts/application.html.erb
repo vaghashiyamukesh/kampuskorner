@@ -8,16 +8,16 @@
 
   <%= stylesheet_link_tag 'style' %>
   <%= stylesheet_link_tag 'slider-styles' %>
-  <%= stylesheet_link_tag 'perfect-scrollbar' %>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <%= javascript_include_tag 'jquery.min' %>
   <%= javascript_include_tag 'slider' %>
-  <%= javascript_include_tag 'perfect-scrollbar.jquery' %>
+  <%= javascript_include_tag 'jquery-ui.min' %>
+  <%= javascript_include_tag 'jquery.slimscroll.min' %>
 
 
 </head>
 <body>
-<div class="wrap">
+<div class="body_header" >
   <div class="top-head">
     <div class="welcome">Welcome To <span>Kampus Korner</span></div>
     <div class="top-nav">
@@ -31,12 +31,18 @@
     </div>
     <div class="clear"> </div>
   </div>
+</div>
+<div class="body_main">
+<div class="wrap">
+
 <%= render 'home/header' %>
   <%= yield %>
 </div>
+  </div>
 <%= render 'home/footer'%>
 <script>
     $('#slider').coinslider();
+
 </script>
 
 </body>

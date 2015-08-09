@@ -50,12 +50,13 @@ html{
 body{
 	font-family: 'Istok Web', sans-serif;
 	font-size:100%;
-	background:url(header-bg.jpg) repeat-x;
+
 }
 .wrap {
-	width:960px;
+	width:70%;
 	margin:0 auto;
 	padding: 0 12px;
+    /*background-color:#097054;*/
 }
 .welcome{
 	float: left;
@@ -108,7 +109,7 @@ body{
 }
 /*--header---*/
 .header{
-	margin-top:4%;
+	/*margin-top:4%;*/
 }
 .logo{
 	float: left;
@@ -119,7 +120,7 @@ body{
 }
 .nav{
 	margin:10px 0 0 0; 
-	background: url(nav-bg.jpg);
+	background: url(manubar1.jpg);
 	font-family: 'Libre Baskerville', serif;
 }
 .nav li {
@@ -139,7 +140,8 @@ body{
 	color:#fff;
 }
 .main-body{
-	background: #fff;
+	/*background: #453823;*/
+    background-image: url("background_main_body.png");
 	padding:12px 12px;
 
 }
@@ -166,8 +168,8 @@ body{
 	margin:15px 0;
 	border-top:1px solid #eee; 
 	padding-top: 15px;
+    padding-left: 4%;
 	float: left;
-	width: 75%;
 
 }
 .grids li img{
@@ -181,9 +183,7 @@ body{
 .grids li{
 	float: left;
 	display: inline;
-	width: 214px;
 	margin: 0 21px 0 0;
-	background: white;
 	padding-bottom: 10px;
 	border-radius: .3em;
 }
@@ -246,7 +246,7 @@ body{
 /*footer*/
 .footer1{
 	border-top:1px solid #999;
-	background: url(nav-bg.jpg);
+	background: url(nav-bg.png);
 }
 .footer1 ul{
 	margin:0px;
@@ -280,7 +280,7 @@ body{
 }
 /*social icons*/
 .footer-grid2{
-	width: 264px;
+
 	float: left;
 	padding: 10px 0px;
 }
@@ -337,7 +337,6 @@ body{
 	font-size: 13px;
 	font-family: 'Libre Baskerville', serif;
 	text-transform: uppercase;
-	background: url(nav-bg.jpg);
 	width:196px;
 }
 .order li a{
@@ -377,7 +376,7 @@ body{
 	float: left;
 	display: inline;
 	margin: 0 21px 0 0;
-	background: white;
+	/*background: white;*/
 	padding-bottom: 10px;
 	border-radius: .3em;
 }
@@ -555,7 +554,7 @@ body{
 .feedbackFromUser{
     background-image: url("background.png");
     background-repeat: no-repeat;
-    width: 90%;
+    width: 82%;
     height: 48%;
     padding-top: 6%;
     padding-left: 3%;
@@ -571,5 +570,82 @@ body{
     background-image: url("menu.png");
     background-repeat: no-repeat;
     height: 620px;
+    width: 464px;
+    float: left;
+}
+.top-head{
+padding-left: 15%;
+    padding-right: 15%;
+}
+.body_header{
+    background:url("body_background.png") repeat-x;
+    height: 70px;
+}
+.body_main{
+    background:url("abc.jpg");
 }
 
+.menu_button{
+    background-image: url("button.png");
+    background-repeat: no-repeat;
+    width: 275px;
+    height: 39px;
+    padding-bottom: 2%;
+    font-family: cursive;
+    font-size: x-large;
+    color: khaki;
+    align-content: initial;
+    text-align: center;
+    cursor: pointer;
+}
+.category{
+    float: right;
+    padding-right: 9%;
+    padding-top: 14%;
+}
+.menu_category{
+    font-size: xx-large;
+    text-align: center;
+    font-family: -webkit-body;
+    margin-bottom: 7%;
+}
+.menu_category p{
+    padding-left: 10%;
+    padding-top: 3%;
+}
+
+.price{
+    float: right;
+    padding-right: 15%;
+    padding-top: 3%;
+    font-family: -webkit-body;
+    font-size: x-large;
+}
+
+.menu_title{
+    padding-left: 10%;
+    padding-top: 3%;
+    font-family: -webkit-body;
+    font-size: x-large;
+    width: 60%;
+    float: left;
+}
+.footer_time{
+    width: 31%;
+    float: left;
+    padding-left: 16%;
+    padding-top: 1%;
+    font-family: cursive;
+}
+.footer_add{
+    width: 31%;
+    float: right;
+    padding-top: 1%;
+    font-family: cursive;
+}
+.home_content{
+    width: 70%;
+    float: left;
+    font-family: cursive;
+    color: khaki;
+}
