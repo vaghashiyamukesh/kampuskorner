@@ -570,7 +570,7 @@ body{
     background-image: url("menu.png");
     background-repeat: no-repeat;
     height: 620px;
-    width: 464px;
+    width: 50%;
     float: left;
 }
 .top-head{
