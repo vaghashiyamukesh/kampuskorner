@@ -583,6 +583,7 @@ padding-left: 15%;
 }
 .body_main{
     background:url("abc.jpg");
+    margin-top: -1%;
 }
 
 .menu_button{
