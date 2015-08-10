@@ -76,7 +76,7 @@ body{
 	display: inline;
 }
 .top-nav li a{
-	color: #867070;
+	color: blanchedalmond;
 	font-size: 12px;
 	margin: 0 4px;
 }
@@ -129,7 +129,7 @@ body{
 	border-right:1px solid #000; 
 }
 .nav li a {
-	color:#867070;
+	color:blanchedalmond;
 	font-size:11px;
 	display:block;
 	padding:10px 45px;
@@ -636,12 +636,14 @@ padding-left: 15%;
     padding-left: 16%;
     padding-top: 1%;
     font-family: cursive;
+    color: khaki
 }
 .footer_add{
     width: 31%;
     float: right;
     padding-top: 1%;
     font-family: cursive;
+    color: khaki
 }
 .home_content{
     width: 70%;
