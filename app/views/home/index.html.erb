@@ -15,10 +15,20 @@
   </div>
     <div class="clear"> </div>
   <div class="home_content">
-  <p style="font-size: xx-large;
-          padding-bottom: 5%;">
-    Welcome to Kampus Korner Restaurant!
-  </p>
+    <div style="font-size: xx-large;
+            padding-bottom: 3%;">
+  <p >
+    Welcome to Kampus Korner Restaurant!</p>
+      <p style="
+      text-align: center;
+              color: floralwhite;
+              font-size: x-large;
+      "> <% all_special.each do |spe| %>
+        <%= spe.title%>
+     <%end %></p>
+
+
+    </div>
   <p style="font-size: initial; padding-bottom: 2%">
     Located in the hub of  Lamar University, you will feel right at home with the different seating areas and the comfortable couches, grouped for gatherings with friends.
     Kampus provides a pleasant place  to eat, study, or just take a deep breath and relax. But the Korner is not just for collegians.

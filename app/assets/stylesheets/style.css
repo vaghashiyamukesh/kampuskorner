@@ -554,11 +554,9 @@ body{
 .feedbackFromUser{
     background-image: url("background.png");
     background-repeat: no-repeat;
-    width: 82%;
+    width: 80%;
     height: 48%;
-    padding-top: 6%;
-    padding-left: 3%;
-    padding-right: 6%;
+    padding: 5%;
 
 }
 .feedbackFromUser p{
